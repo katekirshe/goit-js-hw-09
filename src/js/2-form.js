@@ -1,4 +1,4 @@
-const form = document.querySelector("form");
+const form = document.querySelector(".feedback-form");
 const localStorageFormDataString = localStorage.getItem("feedback-form-state");
 const localStorageFormData = JSON.parse(localStorageFormDataString);
 form.elements.message.value = localStorageFormData?.message ?? "";

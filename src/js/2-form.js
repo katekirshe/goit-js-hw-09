@@ -26,7 +26,6 @@ form.addEventListener("submit", function (event) {
     const data = event.target.elements;
     const email = data.email.value;
     const message = data.message.value;
-    console.log(email, message);
     if (!email.length || !message.length) {
         alert ("Fill please all fields!")
     } else {
